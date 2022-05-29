@@ -1,5 +1,4 @@
-FROM python:3.8
-EXPOSE 8000 
+FROM tiangolo/uvicorn-gunicorn-fastapi:python3.7 
 COPY . /app
 WORKDIR /app
 RUN pip install -r requirements.txt
